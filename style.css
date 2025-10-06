@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 350px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+h2 {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.section {
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.time-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.time-inputs input {
+  width: 60px;
+  padding: 8px;
+  text-align: center;
+  font-size: 16px;
+  border: 2px solid #667eea;
+  border-radius: 5px;
+  outline: none;
+}
+
+.time-inputs input:focus {
+  border-color: #764ba2;
+}
+
+.time-inputs span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #667eea;
+}
+
+.display {
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  color: #667eea;
+  border: 2px solid #667eea;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+#startTimer, #startStopwatch {
+  background-color: #28a745;
+}
+
+#startTimer:hover, #startStopwatch:hover {
+  background-color: #218838;
+}
+
+#pauseTimer, #pauseStopwatch {
+  background-color: #ffc107;
+}
+
+#pauseTimer:hover, #pauseStopwatch:hover {
+  background-color: #e0a800;
+}
+
+#resetTimer, #resetStopwatch {
+  background-color: #dc3545;
+}
+
+#resetTimer:hover, #resetStopwatch:hover {
+  background-color: #c82333;
+}
+
+button:active {
+  transform: scale(0.95);
+}
