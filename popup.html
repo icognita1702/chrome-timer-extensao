@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer/Cronômetro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Timer/Cronômetro</h1>
+    
+    <!-- Timer -->
+    <div class="section">
+      <h2>Timer</h2>
+      <div class="time-inputs">
+        <input type="number" id="hours" min="0" max="23" value="0" placeholder="Horas">
+        <span>:</span>
+        <input type="number" id="minutes" min="0" max="59" value="0" placeholder="Minutos">
+        <span>:</span>
+        <input type="number" id="seconds" min="0" max="59" value="0" placeholder="Segundos">
+      </div>
+      <div class="display" id="timerDisplay">00:00:00</div>
+      <div class="controls">
+        <button id="startTimer">Iniciar</button>
+        <button id="pauseTimer">Pausar</button>
+        <button id="resetTimer">Resetar</button>
+      </div>
+    </div>
+
+    <!-- Cronômetro -->
+    <div class="section">
+      <h2>Cronômetro</h2>
+      <div class="display" id="stopwatchDisplay">00:00:00</div>
+      <div class="controls">
+        <button id="startStopwatch">Iniciar</button>
+        <button id="pauseStopwatch">Pausar</button>
+        <button id="resetStopwatch">Resetar</button>
+      </div>
+    </div>
+
+    <!-- Relógio -->
+    <div class="section">
+      <h2>Relógio</h2>
+      <div class="display" id="clockDisplay">00:00:00</div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
